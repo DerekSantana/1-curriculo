@@ -1,0 +1,348 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Solway:wght@300;400;500;700;800&display=swap');
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+header {
+    padding: 10px 20px;
+    background-color: #5b61693b;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 5px;
+}
+
+nav ul li {
+    margin: 15px 10px 15px 60px;
+    font-size: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+    transition: all 0.3s ease;
+    display: inline-block;  /* Necessário para permitir o efeito transform */
+    position: relative; /* Faz com que o efeito scale não afete o layout */
+    padding-bottom: 4px; /* Espaço para o sublinhado */
+    }
+nav ul li a:hover{
+    color: #114281;
+    font-size: 30px; /* Pode aumentar o tamanho da fonte */
+    transform: scale(1.1); /* Aumenta o tamanho sem afetar o layout */
+    transform-origin: center center; /* Mantém o efeito centrado no meio */
+    z-index: 1; /* Garante que o link fique acima dos outros elementos */
+}
+
+.intro {
+    display: flex;
+    align-items: center;    
+    justify-content: space-between;
+    padding: 50px 20px;
+}
+
+.intro .text {
+    max-width: 60%;
+    position: relative;
+    left: 20px;
+}
+
+.intro h1 {
+    font-size: 70px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.intro h2 {
+    font-size:40px;
+    font-weight: 100;
+    color: #113b72;
+    margin-bottom: 20px;
+    font-family: serif;
+}
+
+.intro p {
+    line-height: 1.6;
+    font-size: 22px;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo h1 {
+    font-size: 4rem;
+    margin: 0;
+}
+
+.logo img {
+    width: 500px;
+    margin-right: 100px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .social img {
+    width: 40px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+footer .social img:hover {
+    transform: scale(1.4);
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #030f1f; /* Cor azul ou outra */
+    margin: 40px 0; /* Espaçamento acima e abaixo */
+}
+#about {
+    padding: 50px 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    text-align: left;
+}
+#about h1,h2,h3,p,ul,li{
+    margin-left: 30px;
+}
+#about h1 {
+    font-size: 50px;
+    font-weight: 800;
+    color: #0c3b79; 
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+.formacao p,
+.experiencia p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.formacao em {
+    font-weight: bold
+}
+
+.experiencia ul {
+    list-style: none;
+    margin-top: 15px;
+    list-style-type: none; /* Define o marcador padrão */
+    margin: 0 0 0 10px; /* Remove margens externas */
+    padding: 0; /* Remove recuo interno */
+}
+
+.experiencia ul li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    margin-left: 20px; /* Controle o recuo dos itens (opcional) */
+    line-height: 1.6; /* Melhor espaçamento entre linhas */
+    }
+
+.experiencia ul li a {
+    color: #062a58;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.experiencia ul li a:hover {
+    color: #0056b3;
+}
+#cor
+{
+    color:#0056b3 ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+}
+#inst{
+    margin-bottom: 0 ;
+}
+#idioma{
+    color: #062a58;
+
+}
+#services {
+    padding: 50px 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    text-align: left;
+}
+#services h1,h2,h3,p,ul,li{
+    margin-left: 30px;
+}
+#services h1 {
+    font-size: 50px;
+    font-weight: 800;
+    color: #0c3b79; 
+    text-align: center;
+    margin-left: x;
+}
+
+#services h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+.formacao p,
+.experiencia p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.formacao em {
+    font-weight: bold
+}
+
+.experiencia ul {
+    list-style: none;
+    margin-top: 15px;
+    list-style-type: none; /* Define o marcador padrão */
+    margin: 0 0 0 10px; /* Remove margens externas */
+    padding: 0; /* Remove recuo interno */
+}
+
+.experiencia ul li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    margin-left: 20px; /* Controle o recuo dos itens (opcional) */
+    line-height: 1.6; /* Melhor espaçamento entre linhas */
+    }
+
+.experiencia ul li a {
+    color: #062a58;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.experiencia ul li a:hover {
+    color: #0056b3;
+    }
+    /* Estilo da seção de galeria */
+#galeria {
+    padding: 0 20px ;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+#galeria h4 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Grade fixa de imagens */
+.grid-galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Sempre 3 colunas */
+    gap: 20px; /* Espaçamento fixo entre as imagens */
+    justify-items: center; /* Centraliza os itens na coluna */
+    margin-bottom: 60px;
+}
+
+.grid-galeria .item {
+    width: 250px; /* Largura fixa para cada imagem */
+    height: 250px; /* Altura fixa para manter o formato quadrado */
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombras */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Imagens dentro do item */
+.grid-galeria .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem preencha o espaço sem deformar */
+}
+
+/* Efeito hover nos itens */
+.grid-galeria .item:hover {
+    transform: scale(1.05); /* Amplia o item */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Aumenta a sombra */
+}
+#contato {
+    padding: 0px 2px;
+    background-color: #f9f9f9;
+  }
+  
+  #contato h2 {
+    font-size: 50px;
+    font-weight: 800;
+    color: #0c3b79; 
+    font-family: serif;
+    font-weight: 800;
+  }
+  .social-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Duas colunas */
+    gap: 4px; /* Espaço mínimo entre os itens */
+    justify-content: center; /* Centraliza as colunas */
+    text-align: center; /* Centraliza o texto */
+  }
+  
+  .social-links a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column; /* Ícone acima do texto */
+    align-items: center; /* Centraliza os itens */
+    padding: 4px; /* Reduzi o padding ao mínimo */
+    gap: 2px; /* Espaço bem pequeno entre ícone e texto */
+    color: #494646;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+  }
+  
+  .social-links a:hover {
+    color: #0077b5; /* Muda a cor do texto no hover */
+  }
+  
+  .social-links img {
+    width: 70px; /* Mantive o tamanho maior das imagens */
+    transition: transform 0.3s ease;
+  }
+  
+  .social-links a:hover img {
+    transform: scale(1.1); /* Pequeno zoom no ícone ao passar o mouse */
+  }
+  
+  #rodape {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #555;
+    font-size: 0.9rem;
+    border-top: 1px solid #ddd;
+  }
+  
+  #rodape p {
+    margin: 0;
+  }
